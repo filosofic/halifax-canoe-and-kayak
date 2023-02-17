@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halifax Canoe & Kayak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="author" content="Halifax Canoe & Kayak">
+    <meta name="description" content="Store front for Halifax Canoe & Kayak">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Halifax Canoe & Kayak</h1>
+            <button id="menu-button"></button>
+            <img id="hamburger" src="images/hamburger.png" alt="Menu">
+            <p>Get ready for your next adventure on the water with our wide selection of
+                kayaks, canoes, and accessories.</p>
+            <img id="paddle" src="images/paddle-white.png" alt="Logo">
+        </div>
+    </header>
+
+    <main>
+
+        <div id="sidebar" style="width: 20%; background-color: #818abf">
+            <aside>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book trip</a></li>
+                    <li><a href="#">Admin Login</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="container">
+            
+            <img src="images/canoe.jpg" width="1200px" alt="Canoe" />
+            
+                        
+            <h2>Welcome to Halifax Canoe & Kayak</h2>
+
+            <p>We offer a variety of adventures on the beautiful lakes and rivers of <b>Nova Scotia</b>.
+                Join us for a guided tour or rent a canoe or kayak and explore on your own.
+            </p>
+            <p><i>Check out our upcoming adventures and register now!</i></p>
+
+            <h3>Upcoming Adventures</h3>
+            <hr>
+
+            <p>
+                Adventure 1
+                Adventure 2
+                Adventure 3
+            </p>
+            <hr>
+
+            <div>
+                <section class="container">
+                    <p>Get ready for your next adventure on the water with our wide selection of kayaks, canoes, and
+                        accessories.</p>
+                    <button class="cta">Shop Now</button>
+                </section>
+            </div>
+
+        </div>
+
+        <!---
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Adventures</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        -->
+
+    </main>
+
+    <footer>
+        <p>Our address is:
+        <address>Halifax Canoe and Kayak. 1234 Water Street. Halifax. NS. Canada.</address>
+        </p>
+        <small>2023 Halifax Canoe and Kayak -- All rights reserved.</small>
+    </footer>
+
+    <!-- //toggle jquery -->
+    <script>
+        window.addEventListener("DOMContentLoaded" function (e) {
+            $(document).ready(function () {
+                $("#hamburger").click(function () {
+                    $("#sidebar").toggle();
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
